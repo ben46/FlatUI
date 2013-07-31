@@ -43,6 +43,9 @@
     
     [[UINavigationBar appearance] setTitleTextAttributes:_titleTextAttributes];
     // remove shadow
-    [[UINavigationBar appearance]setShadowImage:[UIImage imageWithColor:_textFieldPlaceHolderColor]];
+    if ([[[UIDevice currentDevice] systemVersion] floatValue]>= 6.0){
+        [[UINavigationBar appearance]setShadowImage:[UIImage imageWithColor:_textFieldPlaceHolderColor]];
+    }
+        
 }
 @end
