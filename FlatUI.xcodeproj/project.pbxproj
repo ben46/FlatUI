@@ -59,6 +59,10 @@
 		24C89DC01770A1CA009945B2 /* tl.png in Resources */ = {isa = PBXBuildFile; fileRef = 24C89DBD1770A1CA009945B2 /* tl.png */; };
 		24D510CB176F9EE000529935 /* PBFlatGroupedTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D510CA176F9EE000529935 /* PBFlatGroupedTableViewController.m */; };
 		24D510CF176FA5DA00529935 /* PBExampleTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D510CE176FA5DA00529935 /* PBExampleTableVC.m */; };
+		2D7F5E8A17A8F5730035AE7E /* PBFlatButton+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7F5E8317A8F5730035AE7E /* PBFlatButton+Addition.m */; };
+		2D7F5E8B17A8F5730035AE7E /* PBLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7F5E8517A8F5730035AE7E /* PBLabel.m */; };
+		2D7F5E8C17A8F5730035AE7E /* UIButton+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7F5E8717A8F5730035AE7E /* UIButton+Addition.m */; };
+		2D7F5E8D17A8F5730035AE7E /* UIView+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7F5E8917A8F5730035AE7E /* UIView+Addition.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -132,6 +136,14 @@
 		24D510CA176F9EE000529935 /* PBFlatGroupedTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PBFlatGroupedTableViewController.m; path = Classess/PBFlatGroupedTableViewController.m; sourceTree = "<group>"; };
 		24D510CD176FA5DA00529935 /* PBExampleTableVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBExampleTableVC.h; sourceTree = "<group>"; };
 		24D510CE176FA5DA00529935 /* PBExampleTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBExampleTableVC.m; sourceTree = "<group>"; };
+		2D7F5E8217A8F5730035AE7E /* PBFlatButton+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "PBFlatButton+Addition.h"; path = "Classess/PBFlatButton+Addition.h"; sourceTree = "<group>"; };
+		2D7F5E8317A8F5730035AE7E /* PBFlatButton+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "PBFlatButton+Addition.m"; path = "Classess/PBFlatButton+Addition.m"; sourceTree = "<group>"; };
+		2D7F5E8417A8F5730035AE7E /* PBLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PBLabel.h; path = Classess/PBLabel.h; sourceTree = "<group>"; };
+		2D7F5E8517A8F5730035AE7E /* PBLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PBLabel.m; path = Classess/PBLabel.m; sourceTree = "<group>"; };
+		2D7F5E8617A8F5730035AE7E /* UIButton+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIButton+Addition.h"; path = "Classess/UIButton+Addition.h"; sourceTree = "<group>"; };
+		2D7F5E8717A8F5730035AE7E /* UIButton+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIButton+Addition.m"; path = "Classess/UIButton+Addition.m"; sourceTree = "<group>"; };
+		2D7F5E8817A8F5730035AE7E /* UIView+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+Addition.h"; path = "Classess/UIView+Addition.h"; sourceTree = "<group>"; };
+		2D7F5E8917A8F5730035AE7E /* UIView+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+Addition.m"; path = "Classess/UIView+Addition.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +190,7 @@
 		2404968B176E0FC500EF2CE2 /* FlatUI */ = {
 			isa = PBXGroup;
 			children = (
+				2D7F5E8117A8F54B0035AE7E /* ZQClasses */,
 				240496DB176E379C00EF2CE2 /* PBFlatSettings.h */,
 				240496DC176E379C00EF2CE2 /* PBFlatSettings.m */,
 				240496B9176E110E00EF2CE2 /* PBViewController.h */,
@@ -328,6 +341,21 @@
 			name = "Grouped Table View Controller";
 			sourceTree = "<group>";
 		};
+		2D7F5E8117A8F54B0035AE7E /* ZQClasses */ = {
+			isa = PBXGroup;
+			children = (
+				2D7F5E8217A8F5730035AE7E /* PBFlatButton+Addition.h */,
+				2D7F5E8317A8F5730035AE7E /* PBFlatButton+Addition.m */,
+				2D7F5E8417A8F5730035AE7E /* PBLabel.h */,
+				2D7F5E8517A8F5730035AE7E /* PBLabel.m */,
+				2D7F5E8617A8F5730035AE7E /* UIButton+Addition.h */,
+				2D7F5E8717A8F5730035AE7E /* UIButton+Addition.m */,
+				2D7F5E8817A8F5730035AE7E /* UIView+Addition.h */,
+				2D7F5E8917A8F5730035AE7E /* UIView+Addition.m */,
+			);
+			name = ZQClasses;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -439,6 +467,10 @@
 				24D510CB176F9EE000529935 /* PBFlatGroupedTableViewController.m in Sources */,
 				24D510CF176FA5DA00529935 /* PBExampleTableVC.m in Sources */,
 				245BB59E176FC92500FBB147 /* PBFlatGroupedStyleCell.m in Sources */,
+				2D7F5E8A17A8F5730035AE7E /* PBFlatButton+Addition.m in Sources */,
+				2D7F5E8B17A8F5730035AE7E /* PBLabel.m in Sources */,
+				2D7F5E8C17A8F5730035AE7E /* UIButton+Addition.m in Sources */,
+				2D7F5E8D17A8F5730035AE7E /* UIView+Addition.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

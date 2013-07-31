@@ -8,6 +8,7 @@
 
 #import "PBBarButtonIconButton.h"
 #import "PBFlatSettings.h"
+#import "PBLabel.h"
 
 @implementation PBBarButtonIconButton {
     PBFlatIconType _type;
@@ -22,7 +23,12 @@
 }
 -(void)drawRect:(CGRect)rect {
     [PBIconDrawning drawIconInRect:rect withType:_type color:[[PBFlatSettings sharedInstance] mainColor]];
-    
+//    if(self.titleLabel.text && self.titleLabel.text.length > 0) {
+//        PBLabel *label = [[PBLabel alloc] initWithFrame:CGRectMake(rect.size.width, 0, 30, 30)];
+//        [label setText:self.titleLabel.text];
+//        [label sizeToFit];
+//        [self addSubview:label];
+//    }
 }
 - (void)setType:(PBFlatIconType)type {
     _type = type;

@@ -19,17 +19,31 @@
     BOOL _firstCell;
 }
 
--(void)awakeFromNib {
+- (id)init
+{
+    self = [super init];
+    if (self) {
+     
+    }
+    return self;
+}
 
-    
+// zhouzq@cncn.net
+- (void)setup
+{
     _iconImageView = [[UIImageView alloc] initWithFrame:CGRectZero];
     [self.contentView addSubview:_iconImageView];
     
     [self.textLabel setFont:[[PBFlatSettings sharedInstance] font]];
     [self setBackgroundColor:[UIColor whiteColor]];
     [self setSelectionStyle:UITableViewCellSelectionStyleGray];
-    
 }
+
+-(void)awakeFromNib
+{
+    [self setup];
+}
+
 -(void)layoutSubviews {
     [super layoutSubviews];
 

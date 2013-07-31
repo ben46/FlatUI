@@ -22,14 +22,6 @@
     return self;
 }
 
-- (id)initWithCoder:(NSCoder *)aDecoder {
-    self = [super initWithCoder:aDecoder];
-    if (self) {
-        [self appearanceButton];
-    }
-    return self;
-}
-
 - (void)appearanceButton {
     _backgroundColor = [UIColor clearColor];
     _mainColor = [[PBFlatSettings sharedInstance] mainColor];

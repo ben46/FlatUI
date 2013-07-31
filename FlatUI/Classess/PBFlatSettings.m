@@ -27,25 +27,26 @@
         _backgroundColor = [UIColor whiteColor];
         _textFieldPlaceHolderColor = [UIColor colorWithRed:0.80f green:0.80f blue:0.80f alpha:1.00f];
         _secondColor = [UIColor colorWithRed:0.94f green:0.94f blue:0.94f alpha:1.00f];
-        _font = [UIFont fontWithName:@"HelveticaNeue-Light" size:15];
+        _font = [UIFont fontWithName:@"HelveticaNeue-Light" size:17];
         _iconImageColor = [UIColor whiteColor];
     }
     return self;
 }
 
 - (void)navigationBarApperance {
-    
     [[UINavigationBar appearance] setBackgroundImage:[UIImage imageWithColor:[UIColor whiteColor]] forBarMetrics:UIBarMetricsDefault];
     
-    NSDictionary *_titleTextAttributes = @{UITextAttributeTextColor: [UIColor blackColor],
-                                    UITextAttributeTextShadowColor : [UIColor clearColor],
-                                            UITextAttributeFont : [_font fontWithSize:20.0f]};
+    NSDictionary *_titleTextAttributes = [NSDictionary dictionaryWithObjectsAndKeys:
+                       [_font fontWithSize:20.0f], UITextAttributeFont,
+                       [UIColor clearColor],UITextAttributeTextShadowColor,
+                       [UIColor blackColor], UITextAttributeTextColor,
+                                          nil];
     
     [[UINavigationBar appearance] setTitleTextAttributes:_titleTextAttributes];
+    
     // remove shadow
-    if ([[[UIDevice currentDevice] systemVersion] floatValue]>= 6.0){
-        [[UINavigationBar appearance]setShadowImage:[UIImage imageWithColor:_textFieldPlaceHolderColor]];
+    if (iOS6Device) {
+        [[UINavigationBar appearance] setShadowImage:[UIImage imageWithColor:_textFieldPlaceHolderColor]];
     }
-        
 }
 @end
