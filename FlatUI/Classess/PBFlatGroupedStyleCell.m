@@ -37,6 +37,14 @@
     [self.textLabel setFont:[[PBFlatSettings sharedInstance] font]];
     [self setBackgroundColor:[UIColor whiteColor]];
     [self setSelectionStyle:UITableViewCellSelectionStyleGray];
+    
+    _secondLabel = [[UILabel alloc] initWithFrame:CGRectMake(150, 11, 0, 0)];
+    [_secondLabel setFont:[PBFlatSettings sharedInstance].font];
+    [_secondLabel setBackgroundColor:[UIColor clearColor]];
+    [_secondLabel setNumberOfLines:1];
+    [_secondLabel sizeToFit];
+    [self.contentView addSubview:_secondLabel];
+
 }
 
 -(void)awakeFromNib

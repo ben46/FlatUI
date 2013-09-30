@@ -19,4 +19,7 @@
 - (void)setLastCell:(BOOL)boolValue;
 - (void)setFirstCell:(BOOL)boolValue;
 - (void)setIconImageView:(UIImageView *)imageView;
+
+@property (strong, nonatomic) UILabel       *secondLabel;
+
 @end

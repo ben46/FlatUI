@@ -36,7 +36,8 @@
     
     [cell.textLabel setText:[[self exampleTitles] objectAtIndex:index]];
     
-    
+    [cell.secondLabel setText:[[self exampleTitles] objectAtIndex:index]];
+    [cell.secondLabel sizeToFit];
 
     [cell setIconImage:[[self exampleIcons] objectAtIndex:index]];
     [cell setCellAccessoryView:[self exampleAccessoryViewForIndexPath:indexPath]];
