@@ -29,17 +29,19 @@
         _secondColor = [UIColor colorWithRed:0.94f green:0.94f blue:0.94f alpha:1.00f];
         _font = [UIFont fontWithName:@"HelveticaNeue-Light" size:17];
         _iconImageColor = [UIColor whiteColor];
+        _navigationTintColor = [UIColor whiteColor];
     }
     return self;
 }
 
 - (void)navigationBarApperance {
-    [[UINavigationBar appearance] setBackgroundImage:[UIImage imageWithColor:[UIColor whiteColor]] forBarMetrics:UIBarMetricsDefault];
+    [[UINavigationBar appearance] setBackgroundImage:[UIImage imageWithColor:_mainColor] forBarMetrics:UIBarMetricsDefault];
+    [[UINavigationBar appearance] setTintColor:_navigationTintColor];
     
     NSDictionary *_titleTextAttributes = [NSDictionary dictionaryWithObjectsAndKeys:
                        [_font fontWithSize:20.0f], UITextAttributeFont,
                        [UIColor clearColor],UITextAttributeTextShadowColor,
-                       [UIColor blackColor], UITextAttributeTextColor,
+                       _navigationTintColor, UITextAttributeTextColor,
                                           nil];
     
     [[UINavigationBar appearance] setTitleTextAttributes:_titleTextAttributes];
