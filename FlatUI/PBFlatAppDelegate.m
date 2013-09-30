@@ -8,6 +8,7 @@
 
 #import "PBFlatAppDelegate.h"
 #import "PBFlatSettings.h"
+#import "PBExampleTableVC.h"
 
 @implementation PBFlatAppDelegate
 
@@ -15,6 +16,12 @@
 {
     // Override point for customization after application launch.
     [[PBFlatSettings sharedInstance] navigationBarApperance];
+    
+    PBExampleTableVC *vc = [[PBExampleTableVC alloc] init];
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.rootViewController = vc;
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 							

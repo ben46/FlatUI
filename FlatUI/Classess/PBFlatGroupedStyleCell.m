@@ -19,11 +19,11 @@
     BOOL _firstCell;
 }
 
-- (id)init
+- (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
-    self = [super init];
+    self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
-     
+        [self setup];
     }
     return self;
 }

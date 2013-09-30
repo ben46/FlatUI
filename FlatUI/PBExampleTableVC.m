@@ -14,11 +14,11 @@
 @implementation PBExampleTableVC
 -(void)awakeFromNib {
     [super awakeFromNib];
-    [self setTitle:@"Settings"];
 }
 
 -(void)viewDidLoad {
     [super viewDidLoad];
+    [self setTitle:@"Settings"];
 
 }
 
